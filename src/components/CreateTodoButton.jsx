@@ -1,5 +1,5 @@
 export const CreateTodoButton = () => {
     return (
-        <div>CreateTodoButton</div>
+        <button>+</button>
     )
 }

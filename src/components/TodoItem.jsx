@@ -1,5 +1,8 @@
-export const TodoItem = () => {
+export const TodoItem = ({ text }) => {
     return (
-        <div>TodoItem</div>
+        <li>
+            {text}
+            <span>✔</span>
+        </li>
     )
 }

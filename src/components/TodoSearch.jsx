@@ -1,5 +1,5 @@
 export const TodoSearch = () => {
     return (
-        <div>TodoSearch</div>
+        <input type="text" placeholder="Ingresa tu próxima tarea" />
     )
 }

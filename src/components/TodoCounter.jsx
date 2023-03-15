@@ -1,5 +1,7 @@
 export const TodoCounter = () => {
     return (
-        <div>TodoCounter</div>
+        <h2>
+            Has completado 2 de 3 tareas
+        </h2>
     )
 }

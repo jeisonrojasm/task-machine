@@ -1,5 +1,9 @@
-export const TodoList = () => {
+export const TodoList = ({ children }) => {
     return (
-        <div>TodoList</div>
+        <section>
+            <ul>
+                {children}
+            </ul>
+        </section>
     )
 }
