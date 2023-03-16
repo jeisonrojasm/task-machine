@@ -1,0 +1,38 @@
+.todo-search {
+    height: 4rem;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 1rem;
+    border-radius: 2rem;
+    margin-bottom: 2rem;
+    -webkit-box-shadow: 0px 0px 10px 0px var(--secondary-color);
+    -moz-box-shadow: 0px 0px 10px 0px var(--secondary-color);
+    box-shadow: 0px 0px 10px 0px var(--secondary-color);
+}
+
+.todo-search:focus-within {
+    border: solid 0.1rem #00aeff;
+    -webkit-box-shadow: 0px 0px 15px 0px #00aeffbf;
+    -moz-box-shadow: 0px 0px 15px 0px #00aeffbf;
+    box-shadow: 0px 0px 15px 0px #00aeffbf
+}
+
+.todo-search,
+.todo-search__input {
+    background-color: var(--tertiary-color);
+    width: 100%;
+}
+
+.todo-search__input {
+    border: none;
+}
+
+.todo-search__input:focus-visible {
+    outline: none;
+}
+
+.todo-search__icon {
+    color: black;
+}

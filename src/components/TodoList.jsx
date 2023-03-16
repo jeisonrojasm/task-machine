@@ -1,7 +1,9 @@
+import '../styles/TodoList.css';
+
 export const TodoList = ({ children }) => {
     return (
-        <section>
-            <ul>
+        <section className='todo-list'>
+            <ul className='todo-list__ul'>
                 {children}
             </ul>
         </section>

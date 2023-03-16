@@ -1,0 +1,30 @@
+:root {
+    --principal-color: #1e1f23;
+    --secondary-color: #5e5e61;
+    --tertiary-color: #d8d8d8;
+    --principal-font: 'Montserrat', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: var(--principal-font);
+}
+
+body {
+    background-color: var(--principal-color);
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    color: var(--tertiary-color);
+    padding: 2rem;
+    max-width: 57.6rem;
+    margin: 0 auto;
+}

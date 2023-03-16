@@ -1,0 +1,33 @@
+.create-todo-button {
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+}
+
+.create-todo-button__container {
+    width: 5rem;
+    height: 5rem;
+    border: solid 0.5rem #64ffa7;
+    border-radius: 50%;
+    color: #64ffa7;
+    background-color: var(--principal-color);
+    font-size: 5rem;
+    font-weight: 700;
+    position: relative;
+    transition-property: border background-color color transform;
+    transition-duration: 250ms;
+    transition-timing-function: ease-in;
+}
+
+.create-todo-button__container:hover {
+    border: solid 0.5rem #64ffa7;
+    color: var(--principal-color);
+    background-color: #64ffa7;
+    transform: scale(1.2) rotate(90deg);
+}
+
+.create-todo-button__text {
+    position: absolute;
+    top: -23px;
+    left: 2.5px;
+}

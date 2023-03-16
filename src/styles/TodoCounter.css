@@ -1,0 +1,37 @@
+.todo-counter {
+    margin-bottom: 2rem;
+}
+
+.todo-counter__heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.todo-container__title {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.todo-container__title-span {
+    color: var(--secondary-color);
+}
+
+.todo-container__icon {
+    font-size: 5rem;
+}
+
+@media (min-width: 290px) {
+    .todo-container__title {
+        font-size: 5rem;
+    }
+
+    .todo-container__icon {
+        font-size: 8rem;
+    }
+}
+
+.todo-counter__completed-tasks {
+    font-size: 1.7rem;
+}
