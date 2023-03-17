@@ -1,6 +1,6 @@
 import '../styles/TodoCounter.css';
 
-export const TodoCounter = () => {
+export const TodoCounter = ({ totalTodos, completedTodos }) => {
     return (
         <div className='todo-counter'>
             <div className='todo-counter__heading'>
@@ -12,7 +12,7 @@ export const TodoCounter = () => {
             </div>
 
             <h3 className='todo-counter__completed-tasks'>
-                Has completado 2 de 3 tareas
+                Has completado {completedTodos} de {totalTodos} tareas
             </h3>
         </div>
     )
