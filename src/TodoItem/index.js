@@ -1,12 +1,4 @@
-import '../styles/TodoItem.css';
-
-const onClickCheck = (text) => {
-    alert('onClickCheck');
-};
-
-const onClickCloseButton = () => {
-    alert('onClickCloseButton');
-};
+import './TodoItem.css';
 
 export const TodoItem = ({ text, done, onDoneToDo, onDeleteToDo }) => {
     return (

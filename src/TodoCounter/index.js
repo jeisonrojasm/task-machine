@@ -1,4 +1,4 @@
-import '../styles/TodoCounter.css';
+import './TodoCounter.css';
 
 export const TodoCounter = ({ totalTodos, completedTodos }) => {
     return (
