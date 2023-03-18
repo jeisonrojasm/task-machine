@@ -36,13 +36,31 @@ function App() {
     });
   }
 
+  // Marcar tareas como completas
+
+  const onDoneToDo = (text) => {
+    const auxTodos = [...todos];
+    const doneTodoIndex = auxTodos.findIndex(todo => todo.text === text);
+    auxTodos[doneTodoIndex].done = !auxTodos[doneTodoIndex].done;
+    setTodos(auxTodos);
+  };
+
+  // Eliminar una tarea
+
+  const onDeleteToDo = (text) => {
+    const auxTodos = [...todos];
+    const deleteTodoIndex = auxTodos.findIndex(todo => todo.text === text);
+    auxTodos.splice(deleteTodoIndex, 1);
+    setTodos(auxTodos);
+  };
+
   return (
     <>
       <TodoCounter totalTodos={totalTodos} completedTodos={completedTodos} />
       <TodoSearch searchValue={searchValue} setSearchValue={setSearchValue} />
 
       <TodoList>
-        {searchedTodos.map(todo => <TodoItem key={todo.text} text={todo.text} done={todo.done} />)}
+        {searchedTodos.map(todo => <TodoItem key={todo.text} text={todo.text} done={todo.done} onDoneToDo={() => onDoneToDo(todo.text)} onDeleteToDo={() => onDeleteToDo(todo.text)} />)}
       </TodoList>
 
       <CreateTodoButton />
