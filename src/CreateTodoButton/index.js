@@ -1,10 +1,10 @@
 import './CreateTodoButton.css';
 
-const onClickCreateTodoButton = () => {
-    alert('onClickCreateTodoButton');
-};
 
-export const CreateTodoButton = () => {
+export const CreateTodoButton = ({ setOpenModal }) => {
+    const onClickCreateTodoButton = () => {
+        setOpenModal(true);
+    };
     return (
         <div className='create-todo-button' onClick={onClickCreateTodoButton}>
             <button className="create-todo-button__container">

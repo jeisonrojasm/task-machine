@@ -8,6 +8,8 @@ export const TodoProvider = (props) => {
 
     const [searchValue, setSearchValue] = useState('');
 
+    const [openModal, setOpenModal] = useState(false);
+
     const completedTodos = item.filter(todo => todo.done === true).length;
     const totalTodos = item.length;
 
@@ -23,6 +25,15 @@ export const TodoProvider = (props) => {
             return todoText.includes(searchedText);
         });
     }
+
+    const onAddTodo = (text) => {
+        const auxTodos = [...item];
+        auxTodos.push({
+            text: text,
+            done: false,
+        });
+        saveItem(auxTodos);
+    };
     // Marcar tareas como completas
 
     const onDoneToDo = (text) => {
@@ -50,8 +61,11 @@ export const TodoProvider = (props) => {
             searchValue,
             setSearchValue,
             searchedTodos,
+            onAddTodo,
             onDoneToDo,
             onDeleteToDo,
+            openModal,
+            setOpenModal,
         }}>
             {props.children}
         </TodoContext.Provider>

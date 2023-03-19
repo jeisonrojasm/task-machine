@@ -1,0 +1,43 @@
+.todo-form {
+    width: 28rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e1f23;
+}
+
+.todo-form___input{
+    display: block;
+    width: 22rem;
+    height: 8rem;
+    margin: 3rem 3rem 1rem 3rem;
+    font-size: 1.5rem;
+    color: black;
+    font-weight: 600;
+    outline: none;
+    background-color: var(--secondary-color);
+}
+
+.todo-form___input::placeholder{
+    color: var(--tertiary-color);
+}
+
+.todo-form__button{
+    width: 10rem;
+    height: 4rem;
+    margin: 1rem;
+    font-size: 1.5rem;
+    border: none;
+    color: var(--tertiary-color);
+    font-weight: 700;
+    border-radius: 1.5rem;
+}
+
+.todo-form__button--cancel{
+    background-color: #a30d0d;
+}
+
+.todo-form__button--add{
+    background-color: #2664fa;
+}
